@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.j-s {
+    justify-content: space-between;
+}
+
+.a-c {
+    align-items: center;
+}
+
+.j-c {
+    justify-content: center;
+}
+
+/*美化滚动条*/
+.scrollbar {
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: #ddd;
+    }
+
+    &::-webkit-scrollbar-button {
+        display: block;
+        width: 1px;
+        height: 1px;
+    }
+
+    &.auto-hide::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: transparent;
+    }
+
+    &.auto-hide {
+        &:hover::-webkit-scrollbar-thumb {
+            background-color: #c3c3c3;
+        }
+
+        &:hover::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+    }
+}
